@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  /* background: #111; */
+  background: rgba(0,0,0,0.8);
+  height: 100vh; /* body будет занимать 100% пространства*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px; /* чтоб были отступы между картинками */
+  cursor: pointer; /* при наведении на картику менятеся курсор */
+  color: #fff;
+  flex: 1; /* все картинки растягиваются пропорционально */
+  background-size: cover; /* позиционирование картинки */
+  background-position: center; /* показывается центр картинки */
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out; /* анимация */
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0; /* чтобы убрать дефольтные отступы */
+  opacity: 0; /* чтоб заголовки не показывались, если картиника не активная */
+}
+
+/* теперь поработаем над анимацией */
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s; /* анимация */
+}
+
+/* поменять background и вставить другие картинки */
