@@ -1,7 +1,7 @@
 'use strict';
 
 
-function slidesPlugin(activeSlide = 2) {
+function slidesPlugin(activeSlide = 1) {
    const slides = document.querySelectorAll('.slide');
 
    // теперь нужно пройти циклом по каждому из этих слайдов и добавить к нему определенного слушателя  
@@ -24,4 +24,4 @@ function slidesPlugin(activeSlide = 2) {
    }
 }
 
-slidesPlugin(3); 
+slidesPlugin(2); 
