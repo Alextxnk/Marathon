@@ -35,6 +35,16 @@ function changeSlide(direction) {
 }
 
 
+document.addEventListener('keydown', event => {
+   // console.log(event.key); // выводит название любой кнопки с клавиатуры 
+   if(event.key === 'ArrowUp') {
+      changeSlide('up');
+   } else if(event.key === 'ArrowDown') {
+      changeSlide('down');
+   }
+});
+
+
 upBtn.addEventListener('click', () => {
    changeSlide('up');
 });
