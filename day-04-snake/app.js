@@ -10,7 +10,7 @@ const SQUARES_NUMBERS = 300;
 const countColumns = board.clientWidth / 20;
 const countRows = SQUARES_NUMBERS / countColumns;
 const squares = [];
-const timeOut = 300;
+const timeOut = 350;
 let firstStart = true;
 const colors = [
    '#e74c3c',
