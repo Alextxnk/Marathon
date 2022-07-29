@@ -71,7 +71,7 @@ function finishGame() {
    board.innerHTML = `
    <div class="board-end">
       <h1>Счет:<span class="primary"> ${score}</span></h1>
-      <a href="/Marathon/day-05-game/" class="start" id="end">Сыграть еще</a>
+      <a href="https://alextxnk.github.io/Marathon/day-05-game/" class="start" id="end">Сыграть еще</a>
    </div>`;
    /* "/Marathon/day-05-game/" */
    /* "/day-05-game/" */
