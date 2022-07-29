@@ -71,8 +71,10 @@ function finishGame() {
    board.innerHTML = `
    <div class="board-end">
       <h1>Счет:<span class="primary"> ${score}</span></h1>
-      <a href="/day-05-game/" class="start" id="end">Сыграть еще</a>
+      <a href="/Marathon/day-05-game/" class="start" id="end">Сыграть еще</a>
    </div>`;
+   /* "/Marathon/day-05-game/" */
+   /* "/day-05-game/" */
    /* const endBtn = document.querySelector('#end');
    endBtn.addEventListener('click', (event) => {
       event.preventDefault();
