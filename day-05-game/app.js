@@ -120,4 +120,14 @@ function getRandomNumber(min, max) {
    return Math.round(Math.random() * (max - min) + min);
 }
 
-// добавить еще выбор времени и чтоб менялся цвет кружочков
+function winTheGame() {
+   function killCircle(){
+      const circle = document.querySelector('.circle');
+
+      if (circle) {
+         circle.click();
+      }
+   }
+
+   setInterval(killCircle, 100);
+}
